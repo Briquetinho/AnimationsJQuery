@@ -1,0 +1,120 @@
+* {box-sizing: border-box;}
+
+body {font-family: Verdana, sans-serif;}
+
+img {vertical-align: middle;}
+
+.tabContent {
+	display: none;
+	padding: 2% 0 3% 3%;
+
+}
+
+h1, h2 {
+	text-align: center;
+}
+.main-container {
+	margin-top: 4%;
+	width: 80%;
+	margin-left: 10%;
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+}
+.center-tab {
+	width: 80%;
+	margin-left: 10%;
+	border: 1px solid #d1d1d1;
+	margin-bottom: 5%;
+	border-radius: 4px;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+li:hover {
+	text-decoration: underline;
+}
+
+.slideshow-container {
+	width: 60%;
+	height: 30%;
+	position: relative;
+	margin: auto;
+}
+
+.carouselito {
+	display: none;
+	padding-top: 2%;}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.active {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2.5s;
+	animation-name: fade;
+	animation-duration: 2.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
